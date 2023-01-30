@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+    simplehelp:
+        container_name: simplehelp
+        ports:
+            - '8082:80'
+            - '8444:443'
+        volumes:
+            - ./configuration/:/opt/SimpleHelp/configuration/
+        build: ./
